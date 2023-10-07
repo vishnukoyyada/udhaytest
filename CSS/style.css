@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+
+  
+}
+h1{
+    color:aqua;
+    font-family: 'Courier New', Courier, monospace;
+    border:2px solid powderblue;
+    margin:50px;
+    /*
+    Margin property defines the space from the margins.
+    */
+}
+p{
+    color:red;
+    padding:30px;
+    /*
+    padding is the distance from border to that element
+    */
+}
