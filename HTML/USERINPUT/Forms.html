@@ -1,0 +1,87 @@
+<!--
+    Html form elemnts are used to collect the user input data.
+    as we know there will be different ways to collect the data from the user(text,fields, checkboxes, buttons(radio,submit)) and then send to the server.
+-->
+<!--
+    Post method is always better than get to submit the data.
+-->
+
+<!--
+    commonly used elements with form elements
+    <input>
+    <label>
+    <select>
+    <textarea>
+    <button>
+    <fieldset>
+    <legend>
+    <datalist>
+    <output>
+    <option>
+    <optgroup>
+-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action = ""  target="_self" method="post" autocomplete="on" >
+            <label for ="fname"> Enter name:</label><br>
+            <input type = "text" id ="fname" value="vishnu"><br> <hr>
+            <!--
+                Radio button allows us to select one choice at a time.
+            -->
+            <input type ="radio"  name="subject"  id= "py" value="Python"> 
+            <label for ="py" > python</label><br>
+            <input type = "radio" name = "subject" id = "java" value = "Java"> Java<br>
+            <input type = "radio" name = "subject" id = "cpp" value = "cpp"> cpp<hr>
+            <!--
+                Checkboxes are there to help the users select 0  1 or more choices.
+            -->
+            <input type = "checkbox" name ="bikes" value = "yamaha" id = "yh">
+            <label for="yh"> yamhah</label> <br>
+            <input type = "checkbox" name ="bikes" value = "Honda" id = "honda"> Honda
+            <hr>
+            <!--
+                Submit buttons to submit the datat to a form handler.+
+            -->
+
+            <!--
+                select from the drop down list.
+            -->
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="1 multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat" selected>Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            
+            <input type ="submit" value="sub">
+            <hr>
+            <!--
+                <textare> element defines a multiine input field. so that you can add more texta nd submit.
+            -->
+            <textarea name = "message" rows="4" cols="10">
+                Enter the text.
+            </textarea>
+            <input type ="submit" value = "sub">
+            <hr>
+            <!--
+                <button> element defines a clickable button.
+            -->
+            <button type="button" onclick="alert('Hello')"> click </button>
+            <hr>
+            <!--
+                fieldset is used to group the related items together and in a form.
+                and legend is to add a caption for that.
+            -->
+            <fieldset>
+                <legend> person:</legend>
+                <input type = "text" value = "vishnu"> name<br>
+                <input type = "text" value = "22"> age
+            </fieldset>
+
+        </form>
+
+    </body>
+</html>
